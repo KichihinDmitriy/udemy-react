@@ -5,12 +5,12 @@ import './ItemAddForm.css';
 export default class ItemAddForm extends Component {
 
     state = {
-        label: ''
+        label: '',
     }
 
-    onLabelChange = (event) => {
+    onLabelChange = (e) => {
         this.setState({
-            label: event.target.value
+            label: e.target.value
         })
     }
 
@@ -36,7 +36,7 @@ export default class ItemAddForm extends Component {
                 <button
                     type="submit"
                     className="btn btn-outline-secondary">
-                    Add Item
+                    Add
                 </button>
             </form>
         )
